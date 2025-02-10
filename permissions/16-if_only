@@ -1,2 +1,2 @@
 #!/bin/bash
-chown $(test $(stat -c %U hello) = guillaume && echo vincent || echo $(stat -c %U hello)) hello
+chown --from=guillaume vincent hello 
